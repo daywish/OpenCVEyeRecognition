@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34112.27
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnguCVTest", "EnguCVTest\EnguCVTest.csproj", "{50D5B489-14F2-409D-BED8-BB052809C81B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{50D5B489-14F2-409D-BED8-BB052809C81B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50D5B489-14F2-409D-BED8-BB052809C81B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50D5B489-14F2-409D-BED8-BB052809C81B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50D5B489-14F2-409D-BED8-BB052809C81B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1B2088B6-4606-40FA-AF0E-DA19E6C6A12E}
+	EndGlobalSection
+EndGlobal
