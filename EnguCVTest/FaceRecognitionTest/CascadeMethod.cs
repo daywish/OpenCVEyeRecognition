@@ -12,11 +12,11 @@ namespace EnguCVTest.FaceRecognitionTest
 {
     public class CascadeMethod
     {
-        private static string xmlPath = "E:\\test\\EnguCVTest\\EnguCVTest\\CascadeUtil\\Haarcascades\\haarcascade_frontalface_default.xml";
-        private static string xmlPath2 = "E:\\test\\opencv2\\data\\lbpcascades\\lbpcascade_frontalface.xml";
+        private static string xmlPathHaarcascade = "E:\\test\\EnguCVTest\\EnguCVTest\\CascadeUtil\\Haarcascades\\haarcascade_frontalface_default.xml";
+        private static string xmlPathLbpcascade = "E:\\test\\EnguCVTest\\EnguCVTest\\CascadeUtil\\Haarcascades\\lbpcascade_frontalface.xml";
         public static void UseCascadeClassifier(string source)
         {
-            using (CascadeClassifier faceCascade = new CascadeClassifier(xmlPath2))
+            using (CascadeClassifier faceCascade = new CascadeClassifier(xmlPathLbpcascade))
             {
                 // Load the image containing faces
                 using (Mat image = new Mat(source))
@@ -53,7 +53,7 @@ namespace EnguCVTest.FaceRecognitionTest
                             capture.Read(frame); // Read a frame from the camera
 
                             // Detect faces in the frame using Haar Cascade
-                            using (CascadeClassifier faceCascade = new CascadeClassifier(xmlPath2))
+                            using (CascadeClassifier faceCascade = new CascadeClassifier(xmlPathLbpcascade))
                             {
                                 Rect[] faces = faceCascade.DetectMultiScale(frame, scaleFactor: 1.1, minNeighbors: 5, minSize: new Size(30, 30));
 
