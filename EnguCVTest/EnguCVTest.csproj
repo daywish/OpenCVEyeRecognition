@@ -108,7 +108,6 @@
     <Compile Include="CombinatedRecognitionTest\CascadeMethod.cs" />
     <Compile Include="EyeRecognitionTest\CascadeMethod.cs" />
     <Compile Include="FaceRecognitionTest\CascadeMethod.cs" />
-    <Compile Include="FaceRecognitionTest\FaceRecognizerMethod.cs" />
     <Compile Include="ImageTest\ImageReader.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -119,6 +118,10 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <Content Include="CascadeUtil\Haarcascades\haarcascade_eye.xml" />
+    <Content Include="CascadeUtil\Haarcascades\haarcascade_eye_tree_eyeglasses.xml" />
+    <Content Include="CascadeUtil\Haarcascades\haarcascade_frontalface_default.xml" />
+    <Content Include="CascadeUtil\Haarcascades\lbpcascade_frontalface.xml" />
     <Content Include="img\ryan.jpg" />
     <Content Include="img\senjumaru.jpg" />
   </ItemGroup>

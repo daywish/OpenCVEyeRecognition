@@ -11,8 +11,9 @@ namespace EnguCVTest.CombinatedRecognitionTest
 {
     public class CascadeMethod
     {
-        private static string xmlPathFace = "E:\\test\\opencv2\\data\\haarcascades_cuda\\haarcascade_frontalface_default.xml";
-        private static string xmlPathEyes = "E:\\test\\opencv2\\data\\haarcascades_cuda\\haarcascade_eye.xml";
+        private static string xmlPathFace = "E:\\test\\EnguCVTest\\EnguCVTest\\CascadeUtil\\Haarcascades\\haarcascade_frontalface_default.xml";
+        private static string xmlPathEyes = "E:\\test\\EnguCVTest\\EnguCVTest\\CascadeUtil\\Haarcascades\\haarcascade_eye.xml";
+        //private static string xmlPathEyes = "E:\test\EnguCVTest\EnguCVTest\CascadeUtil\Haarcascades\haarcascade_eye_tree_eyeglasses.xml";
 
         public static void UseCascadeClassifier(string source)
         {

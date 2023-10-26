@@ -12,7 +12,7 @@ namespace EnguCVTest.FaceRecognitionTest
 {
     public class CascadeMethod
     {
-        private static string xmlPath = "E:\\test\\opencv\\data\\haarcascades\\haarcascade_frontalface_default.xml";
+        private static string xmlPath = "E:\\test\\EnguCVTest\\EnguCVTest\\CascadeUtil\\Haarcascades\\haarcascade_frontalface_default.xml";
         private static string xmlPath2 = "E:\\test\\opencv2\\data\\lbpcascades\\lbpcascade_frontalface.xml";
         public static void UseCascadeClassifier(string source)
         {

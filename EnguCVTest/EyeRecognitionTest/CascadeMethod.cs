@@ -7,12 +7,12 @@ namespace EnguCVTest.EyeRecognitionTest
 {
     public class CascadeMethod
     {
-        private static string xmlPath = "E:\\test\\opencv\\data\\haarcascades\\haarcascade_eye.xml";
-        private static string xmlPath2 = "E:\\test\\opencv2\\data\\haarcascades_cuda\\haarcascade_eye.xml";
+        private static string xmlPathDefaultEyes = "E:\test\\EnguCVTest\\EnguCVTest\\CascadeUtil\\Haarcascades\\haarcascade_eye.xml";
+        private static string xmlPathEyesWithGlasses = "E:\\test\\EnguCVTest\\EnguCVTest\\CascadeUtil\\Haarcascades\\haarcascade_eye_tree_eyeglasses.xml";
 
         public static void UseCascadeClassifier(string source)
         {
-            using (CascadeClassifier eyeCascade = new CascadeClassifier(xmlPath))
+            using (CascadeClassifier eyeCascade = new CascadeClassifier(xmlPathEyesWithGlasses))
             {
                 using (Mat image = new Mat(source))
                 {
@@ -46,7 +46,7 @@ namespace EnguCVTest.EyeRecognitionTest
                 using (Window window = new Window("Eye Detection"))
                 {
                     // Load the Haar Cascade classifier for eye detection
-                    using (CascadeClassifier eyeCascade = new CascadeClassifier(xmlPath2))
+                    using (CascadeClassifier eyeCascade = new CascadeClassifier(xmlPathEyesWithGlasses))
                     {
                         while (true)
                         {
